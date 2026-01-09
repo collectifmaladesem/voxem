@@ -1,0 +1,89 @@
+/* --------------------------------------*/
+/* Gallery large             
+/* --------------------------------------*/
+
+.notion-collection-gallery.large
+{
+	grid-template-columns: 1fr !important;
+	margin-left: 50px!important;
+	margin-right: 50px!important;
+}
+
+.notion-collection__header-wrapper {
+  display: none!important;
+}
+
+.notion-collection-gallery.large .notion-collection-card 
+{
+	border-radius: 0px 10px 10px 0px;
+	border-left: 8px solid;
+	border-color: var(--orange-global) !important;
+}
+
+html.theme-light .notion-collection-gallery.large .notion-collection-card 
+{
+
+	background-color: #F1ECF7!important;
+}
+
+.notion-collection-gallery.large .notion-collection-card__property-list
+{
+  	margin-top: 0px !important;
+  	padding: 20px !important;
+}
+
+.notion-collection-gallery.large .notion-property__title
+{
+	font-size: 1.2rem !important;
+	font-weight: 600 !important;
+	line-height: 1.5rem !important;
+	/*color: var(--pink-global) !important;*/
+}
+
+.notion-collection-gallery.large .notion-property__text
+{
+	font-size: 0.9rem !important;
+	line-height: 1.4em !important;
+	padding-top:20px;
+}
+
+.notion-collection-gallery.large  .notion-collection-card__property-list:after
+{
+	position: absolute !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	width: 30px;
+	speak: none;
+	font-family: Consolas;
+	font-weigth: 900!important;
+	color: var(--orange-global) ;
+	text-align: center;
+	content: ">";
+	font-size: 30px;
+	padding-right:10px !important;
+	padding-bottom: 0px !important;
+}
+
+/* --------------------------------------*/
+/* Responsive                                 
+/* --------------------------------------*/
+
+@media(max-width:1024px)
+{
+.notion-collection-gallery.large
+  {
+  	grid-template-columns: 1fr !important;
+  	margin-left: 20px!important;
+  	margin-right: 20px!important;
+  }
+}
+
+@media(max-width:546px)
+{
+  .notion-collection-gallery.large
+  {
+  	grid-template-columns: 1fr !important;
+  	margin-left: 0px!important;
+  	margin-right: 0px!important;
+  }
+}
