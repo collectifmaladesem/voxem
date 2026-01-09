@@ -1,0 +1,14 @@
+.notion-collection-card__cover {
+  height: auto !important;
+  max-height: none !important;
+  min-height: auto !important;
+}
+
+
+.notion-collection-gallery.small .notion-property__title
+{
+	font-weight: 600 !important;
+	line-height: 1.5rem !important;
+	padding-bottom: 10px!important;
+}
+
