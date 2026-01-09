@@ -1,0 +1,11 @@
+
+.notion-callout.bg-gray-light {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0.7rem!important;
+
+} 
+
+.notion-callout.bg-gray-light.border .notion-semantic-string {
+  line-height: 1rem !important;
+}
