@@ -2,36 +2,35 @@
 :root
 {
 	--layout-max-width: 1200px !important;
-  	/*--collection-card-cover-size-large: 420px!important;*/
-  --header-cover-height: 55vh!important;
-  --header-cover-height-mobile: 30vh!important;
+	--header-cover-height: 55vh!important;
+	--header-cover-height-mobile: 30vh!important;
 	--padding-left-mobile: 4% !important;
 	--padding-right-mobile: 4% !important;
-  
 }
 
-body {
+body 
+{
 	overflow-x: hidden !important;
 }
+
 .super-content-wrapper
 {
 	padding-top: 0px!important;
 }
 
-
-.notion-header {
+.notion-header 
+{
 	display: block !important; 
 }
 
-
-.notion-root.has-footer {
+.notion-root.has-footer 
+{
 	padding-bottom: 0px!important;
 }
 
-
-h2.notion-heading {
-  text-transform: uppercase!important;
-  font-weight: 900!important;
+h2.notion-heading::before 
+{
+	display: none !important;
 }
 
 /* --------------------------------------*/
@@ -55,8 +54,6 @@ h2.notion-heading {
 	text-align: center!important;
 }
 
-
-
 .notion-root>.notion-callout>.notion-callout__icon
 {
 	display: none !important;
@@ -74,18 +71,17 @@ h2.notion-heading {
 	padding-left: var(--padding-left) !important;
 	padding-right: var(--padding-right) !important;
 	margin: 0 auto !important;
-  align-items: center !important;
-
+	align-items: center !important;
 }
 
-
-/* GRIS */
+/* callout gris */
 .theme-light .notion-callout.bg-gray-light
 {
 	background: #222020 !important;
 	color: white !important;
 	border: none !important;
 }
+
 .theme-dark .notion-callout.bg-gray-light
 {
 	background: #222020 !important;
@@ -93,14 +89,13 @@ h2.notion-heading {
 	border: none !important;
 }
 
-/* Rouge */
-
-.notion-callout.bg-red-light
+/* Callout rouge */
+html.theme-light .notion-callout.bg-red-light
 {
-  	background: url('https://img.voxem.fr/pexels-photo-4570711.jpeg') no-repeat;
+	background: url('https://site.voxem.fr/img/pexels-photo-4570711.jpeg') no-repeat;
 	color: white !important;
 	background-position: left !important;
-  background-size: cover!important;	
+	background-size: cover!important;	
 	width: 200vw !important;
 	max-width: 100vw !important;
 	margin-left: -50vw !important;
@@ -109,31 +104,44 @@ h2.notion-heading {
 	height: 40vw!important;
  }
 
+html.theme-dark .notion-callout.bg-red-light
+{
+	background:  radial-gradient(circle,rgba(0, 0, 0, 0) 0%, rgba(20, 20, 20, 1) 100%), url('https://site.voxem.fr/img/pexels-photo-4570711.jpeg') no-repeat;
+	color: black !important;
+	background-position: left !important;
+	background-size: cover!important;	
+	width: 200vw !important;
+	max-width: 100vw !important;
+	margin-left: -50vw !important;
+	left: 50% !important;
+	position: relative !important;
+	height: 40vw!important;
+ }
 
 /* --------------------------------------*/
-/* Media : callout             
+/* Responsive      
 /* --------------------------------------*/
 
-@media all and (max-width: 546px) {
+@media all and (max-width: 546px) 
+{
 	.notion-root>.notion-callout>.notion-callout__content
 	{
-	        padding-left: var(--padding-left-mobile) !important;
-	        padding-right: var(--padding-right-mobile) !important;
+		padding-left: var(--padding-left-mobile) !important;
+		padding-right: var(--padding-right-mobile) !important;
 	}
-
-    	.notion-root>.notion-callout>.notion-callout__icon
+	
+	.notion-root>.notion-callout>.notion-callout__icon
 	{
-	        padding-left: var(--padding-left-mobile) !important;
-	        padding-right: var(--padding-right-mobile) !important;
-  }
-  .notion-callout
-  {
-  	text-align: center!important;
-  }
-  .notion-header__cover {
-	  height: var(--header-cover-height-mobile)!important;
-  }
-
+		padding-left: var(--padding-left-mobile) !important;
+		padding-right: var(--padding-right-mobile) !important;
+	}
+	.notion-callout
+	{
+		text-align: center!important;
+	}
+	.notion-header__cover 
+	{
+		height: var(--header-cover-height-mobile)!important;
+	}
 }
-
 
