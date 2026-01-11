@@ -1,0 +1,22 @@
+
+html.theme-dark .notion-root img {
+  filter: brightness(30%) grayscale(50%);
+  transition: filter 0.1s ease;
+}  
+
+html.theme-dark .notion-root .notion-image:not(:active):after{
+  display: inline!important;
+  position: absolute !important;
+  top: 25px !important;
+  right: 25px !important;
+  speak: none!important;
+  color: white!important;
+  text-align: center;
+  content: "Cliquer sur l'image ☀️"!important;
+  font-size: 15px!important;
+  font-weight: medium!important;
+}
+
+html.theme-dark .notion-root .notion-collection-gallery img {
+  filter: none;
+}
