@@ -1,3 +1,4 @@
+
 /* --------------------------------------*/
 /* Gallery large             
 /* --------------------------------------*/
@@ -17,12 +18,10 @@
 {
 	border-radius: 0px 10px 10px 0px;
 	border-left: 8px solid;
-	border-color: var(--orange-global) !important;
 }
 
 html.theme-light .notion-collection-gallery.large .notion-collection-card 
 {
-
 	background-color: #F1ECF7!important;
 }
 
