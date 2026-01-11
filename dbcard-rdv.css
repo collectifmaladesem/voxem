@@ -3,7 +3,48 @@
 /* Gallery large             
 /* --------------------------------------*/
 
-.notion-collection-card__cover {
+
+.notion-collection-gallery.large {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  gap: 120px !important;
+  margin-left:30px!important;
+  margin-right:30px!important;
+
+}
+
+.notion-collection-gallery.large .notion-collection-card {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  border-radius: 0px !important;
+	background-color: var(--lilas-global)!important;
+}
+
+html.theme-dark .notion-collection-gallery.large .notion-collection-card {
+    background: none!important;
+  	/*border-top: solid 1px;
+  	border-color: var(--orange-global) !important;*/
+}
+
+html.theme-dark .notion-collection-gallery.large .notion-collection-card::after { 
+  content: "";
+  width: 35px;
+  height: 1px;
+  background: #949494;
+  background-color: var(--orange-global);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
+.notion-collection-gallery.large .notion-collection-card__cover {
   height: auto !important;
   max-height: none !important;
   min-height: auto !important;
@@ -24,15 +65,27 @@
 .notion-collection-gallery.large .notion-property__title
 {
 	font-size: 1.2rem !important;
-	font-weight: 600 !important;
+	font-weight: bold !important;
 	line-height: 1.5rem !important;
-	color:var(--pink-global) ;
-	/*color: var(--pink-global) !important;*/
+	color: var(--black-global) !important;
 }
 
 .notion-collection-gallery.large .notion-property__text
 {
-	font-size: 0.9rem !important;
+	font-size: 1rem !important;
 	line-height: 1.4rem !important;
-	padding-top:10px;
+	padding-top:20px;
+}
+
+/* --------------------------------------*/
+/* Responsive                                 
+/* --------------------------------------*/
+
+@media(max-width:1024px)
+{
+.notion-collection-gallery.large
+  {
+  margin-left:0px!important;
+  margin-right:0px!important;
+  }
 }
