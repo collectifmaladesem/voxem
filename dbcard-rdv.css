@@ -3,30 +3,32 @@
 /* Gallery large             
 /* --------------------------------------*/
 
-
-.notion-collection-gallery.large {
+.notion-collection-gallery.large 
+{
   display: flex !important;
   flex-direction: column-reverse !important;
   gap: 120px !important;
   margin-left:30px!important;
   margin-right:30px!important;
-
 }
 
-.notion-collection-gallery.large .notion-collection-card {
+.notion-collection-gallery.large .notion-collection-card 
+{
   display: flex !important;
   flex-direction: column-reverse !important;
   border-radius: 0px !important;
 	background-color: var(--lilas-global)!important;
 }
 
-html.theme-dark .notion-collection-gallery.large .notion-collection-card {
+html.theme-dark .notion-collection-gallery.large .notion-collection-card 
+{
     background: none!important;
   	/*border-top: solid 1px;
   	border-color: var(--orange-global) !important;*/
 }
 
-html.theme-dark .notion-collection-gallery.large .notion-collection-card::after { 
+html.theme-dark .notion-collection-gallery.large .notion-collection-card::after 
+{ 
   content: "";
   width: 35px;
   height: 1px;
@@ -42,19 +44,16 @@ html.theme-dark .notion-collection-gallery.large .notion-collection-card::after 
   margin-bottom: 5px;
 }
 
-
-
-.notion-collection-gallery.large .notion-collection-card__cover {
+.notion-collection-gallery.large .notion-collection-card__cover 
+{
   height: auto !important;
   max-height: none !important;
   min-height: auto !important;
 }
 
-
 .notion-collection__header-wrapper {
   display: none!important;
 }
-
 
 .notion-collection-gallery.large .notion-collection-card__property-list
 {
@@ -85,7 +84,7 @@ html.theme-dark .notion-collection-gallery.large .notion-collection-card::after 
 {
 .notion-collection-gallery.large
   {
-  margin-left:0px!important;
-  margin-right:0px!important;
+	  margin-left:0px!important;
+	  margin-right:0px!important;
   }
 }
