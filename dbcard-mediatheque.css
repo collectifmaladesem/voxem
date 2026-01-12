@@ -1,8 +1,3 @@
-
-/* --------------------------------------*/
-/* Gallery large             
-/* --------------------------------------*/
-
 .notion-collection-gallery.large .notion-collection-card
 {
 	display: flex !important;
@@ -20,5 +15,5 @@
 	font-size: 1.2rem !important;
 	font-weight: 600 !important;
 	line-height: 1.5rem !important;
-	color: var(--pink-global) !important;
+	color: var(--orange-global) !important;
 }
